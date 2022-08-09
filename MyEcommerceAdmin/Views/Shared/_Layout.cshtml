@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+    <meta name="author" content="AdminKit">
+    <meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+    <title>@ViewBag.Title - MVC E-commerce Project</title>
+    <link href="~/Content/CSS/bootstrap.css" rel="stylesheet" />
+    <link href="~/Fontawesome/css/all.css" rel="stylesheet" />
+    <link href="~/Content/CSS/app.css" rel="stylesheet" />
+    @RenderSection("Head", false)
+</head>
+
+<body>
+    <div class="wrapper">
+        @*Sidebar Navegation Start Here*@
+        <nav id="sidebar" class="sidebar js-sidebar">
+            <div class="sidebar-content js-simplebar">
+                <a class="sidebar-brand" href="@Url.Action("Index", "Dashboard")">
+                    <span class="align-middle">IsDB-BISEW</span>
+                </a>
+
+                <ul class="sidebar-nav">
+
+                    <li class="sidebar-item active">
+                        <a class="sidebar-link fs-4" href="@Url.Action("Index", "Dashboard")">
+                            <i class="fa-solid fa-gauge"></i><span class="align-middle">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a class="sidebar-link fs-4" href="@Url.Action("Index", "Order")">
+                            <i class="fa-regular fa-cart-shopping-fast"></i><span class="align-middle">Order</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a class="sidebar-link fs-4" href="@Url.Action("Index", "Product")">
+                            <i class="fa-solid fa-table"></i><span class="align-middle">Product</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a class="sidebar-link fs-4" href="@Url.Action("Index", "Supplier")">
+                            <i class="fa-regular fa-truck-field"></i><span class="align-middle">Supplier</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a class="sidebar-link fs-4" href="@Url.Action("Index", "Customer")">
+                            <i class="fa-light fa-person"></i><span class="align-middle">Customer</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link fs-4" href="@Url.Action("Index", "Employee")">
+                            <i class="fa-solid fa-person-chalkboard"></i><span class="align-middle">Employee</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link fs-4" href="@Url.Action("Create", "Category")">
+                            <i class="fa-regular fa-cabinet-filing"></i><span class="align-middle">Add Category</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link fs-4" href="@Url.Action("Create", "SubCategory")">
+                            <i class="fa-solid fa-diagram-subtask"></i><span class="align-middle">Add SubCategory</span>
+                        </a>
+                    </li>
+
+                    @*<li class="sidebar-item">
+                        <a class="sidebar-link fs-4" href="@Url.Action("StocksReport", "Reports")">
+                            <i class="fa-solid fa-file-chart-column"></i><span class="align-middle">Reports</span>
+                        </a>
+                    </li>*@
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+                            <i class="align-middle" data-feather="settings"></i>
+                        </a>
+
+                        <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+                            &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-file-chart-column fs-4" style="color: rgba(233,236,239,.5);"></i>&nbsp;&nbsp;&nbsp;<span class="fs-4" style="color: rgba(233,236,239,.5);">View Reports</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item fs-4" href="@Url.Action("StocksReport", "Reports")"><i class="fa-solid fa-arrow-trend-up"></i> Stocks Report</a>
+                            <a class="dropdown-item fs-4" href="@Url.Action("CustomersReport", "Reports")"><i class="fa-solid fa-chart-user"></i> Customers Report</a>
+                            <a class="dropdown-item fs-4" href="@Url.Action("SalesReport", "Reports")"><i class="fa-solid fa-messages-dollar"></i> Sales Report</a>
+                            @*<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>*@
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://localhost:44313/">IsDB-BISEW</a>
+                        </div>
+
+
+
+<li class="sidebar-header border-top mt-2 fs-4 text-muted">
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a class="sidebar-link fs-4" href="@Url.Action("Index", "Profile")">
+                            <i class="fa-solid fa-user"></i><span class="align-middle">Profile</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link fs-4" href="@Url.Action("Logout", "admin_Login")">
+                            <i class="fa-regular fa-right-from-bracket"></i><span class="align-middle">LogOut</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="main">
+            <nav class="navbar navbar-expand navbar-light navbar-bg">
+                <a class="sidebar-toggle js-sidebar-toggle">
+                    <i class="hamburger align-self-center"></i>
+                </a>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav navbar-align">
+                        @*Top Navegation Start Here*@
+                        <li class="nav-item dropdown">
+                            <a class=" d-inline-block d-sm-none nav-link fs-4" href="#">
+                                <i class="fa-duotone fa-hands-clapping"></i>&nbsp;<span>Hello!&nbsp;@Session["username"]</span>
+                            </a>
+
+                            <a class="nav-link d-none d-sm-inline-block fs-4" href="#" data-bs-toggle="dropdown">
+                                <i class="fa-duotone fa-hands-clapping"></i>&nbsp;<span>Hello!&nbsp;@Session["username"]</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link d-none d-sm-inline-block fs-4" href="@Url.Action("Index", "Profile")">
+                                <i class="fa-solid fa-user"></i>&nbsp;<span>Profile</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-none d-sm-inline-block fs-4" href="@Url.Action("Logout", "admin_Login")">
+                                <i class="fa-regular fa-right-from-bracket"></i>&nbsp;<span>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            @*Content Area Srart Here*@
+            <main class="content">
+                <div class="container-fluid p-0">
+                    @RenderBody()
+                </div>
+            </main>
+            @*Footer Section Start*@
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row text-muted">
+                        <div class="col-6 text-start">
+                            <p class="mb-0">
+                                <a class="text-muted nav-link" href="@Url.Action("Index", "Dashboard")">&copy; @DateTime.Now.Year<strong>&nbsp;IsDB-BISEW</strong></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    @RenderSection("scripts", false)
+    <script src="~/Content/JS/bootstrap.js"></script>
+    <script src="~/Content/JS/app.js"></script>
+</body>
+</html>

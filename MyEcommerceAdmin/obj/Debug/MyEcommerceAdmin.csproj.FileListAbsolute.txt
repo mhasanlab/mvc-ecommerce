@@ -1,0 +1,451 @@
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\MyEcommerceAdmin.dll.config
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\MyEcommerceAdmin.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\MyEcommerceAdmin.pdb
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csc.exe
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csc.exe.config
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csc.rsp
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csi.exe
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csi.exe.config
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csi.rsp
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.Managed.Core.targets
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.AppContext.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Collections.Immutable.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Console.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Globalization.Calendars.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.Compression.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.FileSystem.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Net.Http.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Net.Sockets.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Reflection.Metadata.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.ValueTuple.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.XmlDocument.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.XPath.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\vbc.exe
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\vbc.exe.config
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\vbc.rsp
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\VBCSCompiler.exe
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\VBCSCompiler.exe.config
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\Antlr3.Runtime.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.SqlServer.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\Microsoft.Web.Infrastructure.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\Newtonsoft.Json.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Helpers.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Mvc.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Razor.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Deployment.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Razor.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\WebGrease.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\Antlr3.Runtime.pdb
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.xml
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.SqlServer.xml
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\Newtonsoft.Json.xml
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Razor.xml
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.xml
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Deployment.xml
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Razor.xml
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Helpers.xml
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Mvc.xml
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.CoreCompileInputs.cache
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.CopyComplete
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.dll
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.pdb
+E:\PROJECT\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.AssemblyReference.cache
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\MyEcommerceAdmin.dll.config
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\MyEcommerceAdmin.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\MyEcommerceAdmin.pdb
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csc.exe
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csc.exe.config
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csc.rsp
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csi.exe
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csi.exe.config
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csi.rsp
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.Managed.Core.targets
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.AppContext.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Collections.Immutable.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Console.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Globalization.Calendars.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.Compression.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.FileSystem.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Net.Http.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Net.Sockets.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Reflection.Metadata.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.ValueTuple.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.XmlDocument.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.XPath.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\vbc.exe
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\vbc.exe.config
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\vbc.rsp
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\VBCSCompiler.exe
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\VBCSCompiler.exe.config
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\Antlr3.Runtime.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.SqlServer.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\Microsoft.Web.Infrastructure.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\Newtonsoft.Json.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\PagedList.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Helpers.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Mvc.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Razor.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Deployment.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Razor.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\WebGrease.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\Antlr3.Runtime.pdb
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.xml
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.SqlServer.xml
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\Newtonsoft.Json.xml
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\PagedList.xml
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Razor.xml
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.xml
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Deployment.xml
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Razor.xml
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Helpers.xml
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Mvc.xml
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.CoreCompileInputs.cache
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.CopyComplete
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.dll
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.pdb
+F:\MVC PROJECT\E-Commerce\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.AssemblyReference.cache
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\MyEcommerceAdmin.dll.config
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\MyEcommerceAdmin.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\MyEcommerceAdmin.pdb
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csc.exe
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csc.exe.config
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csc.rsp
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csi.exe
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csi.exe.config
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csi.rsp
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.Managed.Core.targets
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.AppContext.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Collections.Immutable.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Console.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Globalization.Calendars.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.Compression.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.FileSystem.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Net.Http.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Net.Sockets.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Reflection.Metadata.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.ValueTuple.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.XmlDocument.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.XPath.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\vbc.exe
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\vbc.exe.config
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\vbc.rsp
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\VBCSCompiler.exe
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\VBCSCompiler.exe.config
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\Antlr3.Runtime.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.SqlServer.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\Microsoft.Web.Infrastructure.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\Newtonsoft.Json.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\PagedList.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Helpers.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Mvc.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Razor.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Deployment.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Razor.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\WebGrease.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\Antlr3.Runtime.pdb
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.xml
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.SqlServer.xml
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\Newtonsoft.Json.xml
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\PagedList.xml
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Razor.xml
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.xml
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Deployment.xml
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Razor.xml
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Helpers.xml
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Mvc.xml
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.AssemblyReference.cache
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.CoreCompileInputs.cache
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.CopyComplete
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.dll
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.pdb
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.Migrations.ScriptA.resources
+F:\MVC PROJECT\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.GenerateResource.cache
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\MyEcommerceAdmin.dll.config
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\MyEcommerceAdmin.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\MyEcommerceAdmin.pdb
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csc.exe
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csc.exe.config
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csc.rsp
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csi.exe
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csi.exe.config
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csi.rsp
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.Managed.Core.targets
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.AppContext.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Collections.Immutable.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Console.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Globalization.Calendars.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.Compression.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.FileSystem.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Net.Http.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Net.Sockets.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Reflection.Metadata.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.ValueTuple.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.XmlDocument.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.XPath.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\vbc.exe
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\vbc.exe.config
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\vbc.rsp
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\VBCSCompiler.exe
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\VBCSCompiler.exe.config
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\Antlr3.Runtime.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.SqlServer.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\Microsoft.Web.Infrastructure.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\Newtonsoft.Json.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\PagedList.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Helpers.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Mvc.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Razor.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Deployment.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Razor.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\WebGrease.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\Antlr3.Runtime.pdb
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.xml
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.SqlServer.xml
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\Newtonsoft.Json.xml
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\PagedList.xml
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Razor.xml
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.xml
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Deployment.xml
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Razor.xml
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Helpers.xml
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Mvc.xml
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.AssemblyReference.cache
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.Migrations.ScriptA.resources
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.GenerateResource.cache
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.CoreCompileInputs.cache
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.CopyComplete
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.pdb
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportSource.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.Shared.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\MyEcommerceProject\MyEcommerceProject\MyEcommerceAdmin\bin\stdole.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\MyEcommerceAdmin.dll.config
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\MyEcommerceAdmin.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\MyEcommerceAdmin.pdb
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csc.exe
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csc.exe.config
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csc.rsp
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csi.exe
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csi.exe.config
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\csi.rsp
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.Managed.Core.targets
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.AppContext.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Collections.Immutable.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Console.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Globalization.Calendars.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.Compression.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.FileSystem.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Net.Http.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Net.Sockets.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Reflection.Metadata.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.ValueTuple.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.XmlDocument.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.XPath.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\vbc.exe
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\vbc.exe.config
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\vbc.rsp
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\VBCSCompiler.exe
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\roslyn\VBCSCompiler.exe.config
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\Antlr3.Runtime.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportSource.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.Shared.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.SqlServer.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\Microsoft.Web.Infrastructure.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\Newtonsoft.Json.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\PagedList.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Helpers.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Mvc.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Razor.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Deployment.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Razor.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\WebGrease.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\stdole.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\Antlr3.Runtime.pdb
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.xml
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\EntityFramework.SqlServer.xml
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\Newtonsoft.Json.xml
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\PagedList.xml
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Razor.xml
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.xml
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Deployment.xml
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Webpages.Razor.xml
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Helpers.xml
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\System.Web.Mvc.xml
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.Migrations.ScriptA.resources
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.GenerateResource.cache
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.CoreCompileInputs.cache
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.CopyComplete
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.dll
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.pdb
+E:\MVC FINAL PROJECT\MyEcommerceProject\MyEcommerceAdmin\obj\Debug\MyEcommerceAdmin.csproj.AssemblyReference.cache

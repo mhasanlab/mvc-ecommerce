@@ -1,0 +1,48 @@
+﻿@model IEnumerable<MyEcommerceAdmin.Models.Product>
+@{
+    ViewBag.Title = "Product Information";
+}
+
+<div class="row">
+    <div class="col">
+        <h2 class="text-info">Product List</h2>
+        <hr />
+        <div class="d-flex justify-content-end mb-2">
+            <a href="@Url.Action("Create", "Product")" class="btn btn btn-outline-primary"><i class="fa-regular fa-square-plus fs-1"></i></a>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-condensed table-hover table-bordered table-striped table">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(p => p.Name)</th>
+                        <th>@Html.DisplayNameFor(p => p.SupplierID)</th>
+                        <th>@Html.DisplayNameFor(p => p.CategoryID)</th>
+                        @*<th>@Html.DisplayNameFor(p => p.SubCategoryID)</th>*@
+                        <th>@Html.DisplayNameFor(p => p.UnitPrice)</th>
+                        <th>@Html.DisplayNameFor(p => p.UnitInStock)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var pdt in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(p => pdt.Name)</td>
+                            <td>@Html.DisplayFor(p => pdt.Supplier.CompanyName)</td>
+                            <td>@Html.DisplayFor(p => pdt.Category.Name)</td>
+                            @*<td>@Html.DisplayFor(p => pdt.SubCategory.Name)</td>*@
+                            <td>@Html.DisplayFor(p => pdt.UnitPrice)</td>
+                            <td>@Html.DisplayFor(p => pdt.UnitInStock)</td>
+                            <td>
+                                <a href="@Url.Action("Edit", "Product", new {id = pdt.ProductID })" class="btn btn-outline-warning btn-sm"><i class="fa-solid fa-pen-to-square fs-4"></i></a>
+                                <a href="@Url.Action("Details", "Product", new {id = pdt.ProductID })" class="btn btn-outline-info btn-sm"><i class="fa-regular fa-circle-info fs-4"></i></a>
+                                <a href="@Url.Action("Delete", "Product", new {id = pdt.ProductID })" class="btn btn-outline-danger btn-sm"><i class="fa-regular fa-trash-arrow-up fs-4"></i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

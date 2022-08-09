@@ -1,0 +1,139 @@
+﻿@using MyEcommerceAdmin.Models;
+@model Tuple<Order, IEnumerable<OrderDetail>>
+@{
+    ViewBag.Title = "Order";
+    ViewBag.SubTitle = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+  }
+
+<div class="row">
+    <div class="col-md-6">
+        <dl class="dl-horizontal ">
+            <dt>
+                @Html.DisplayName("Order ID : ")
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Item1.OrderID)
+            </dd>
+            <dt>
+                @Html.DisplayName("Customer Name : ")
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Item1.Customer.First_Name)&nbsp;@Html.DisplayFor(model => model.Item1.Customer.Last_Name)
+            </dd>
+            <dt>
+                @Html.DisplayName("Customer Address : ")
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Item1.Customer.Address)
+            </dd>
+            <dt>
+                @Html.DisplayName("Contact No : ")
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Item1.Customer.Phone)
+            </dd>
+
+        </dl>
+    </div>
+    <div class="col-md-6">
+        <dl class="dl-horizontal ">
+            <dt>
+                @Html.DisplayName("Shipping ID : ")
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Item1.ShippingID)
+            </dd>
+
+            <dt>
+                @Html.DisplayName("Payment ID : ")
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Item1.Payment.PaymentType.TypeName)
+            </dd>
+
+            <dt>
+                @Html.DisplayName("Shipping Address : ")
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Item1.ShippingDetail.Address)
+            </dd>
+            <dt>
+                @Html.DisplayName("Shipping Address : ")
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Item1.ShippingDetail.Email)
+            </dd>
+
+        </dl>
+    </div>
+</div>
+
+<div class="row">
+    <div class="panel panel-primary">
+        <div class="panel-heading" style="padding:5px 15px">
+            <h4>Items</h4>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="">
+                    <div class="table-responsive col-md-off ">
+                        <table class="table table-hover ">
+                            <thead>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Product Name</th>
+                                    <th>Quantity</th>
+                                    <th>Unit Price</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                @{int i = 0;}
+                                @foreach (var item in Model.Item2)
+                                {
+                                    i++;
+                    <tr>
+                        <td>@i.ToString()</td>
+                        <td>@item.Product.Name</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.UnitPrice</td>
+                        <td>@item.TotalAmount</td>
+                    </tr>}
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="5"><h2></h2></td>
+
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>@ViewBag.TotalItems</th>
+                                    <th></th>
+                                    <th>@ViewBag.Amount </th>
+                                </tr>
+                                <tr>
+                                    <th>Discount</th>
+                                    <th colspan="3"></th>
+                                    <th>@ViewBag.Discount</th>
+                                </tr>
+                                <tr class="bg-info">
+                                    <th>Total Amount</th>
+                                    <th colspan="3"></th>
+                                    <th>@ViewBag.TAmount</th>
+                                </tr>
+                            </tfoot>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.ActionLink("Back to List", "Index", "Order", new { @class = "btn btn-success" })
+
+
+

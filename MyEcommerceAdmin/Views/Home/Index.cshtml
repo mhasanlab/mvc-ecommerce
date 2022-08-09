@@ -1,0 +1,227 @@
+﻿
+@{
+    ViewBag.Title = "IsDB-BISEW MVC Project";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+  }
+
+<style>
+    .aa-browse-btn {
+        display: inline-block;
+        font-size: 16px;
+        padding: 12px 18px;
+        color: #a94442;
+    }
+</style>
+
+<!-- Start slider -->
+<section id="aa-slider">
+    <div class="aa-slider-area">
+        <div id="sequence" class="seq">
+            <div class="seq-screen">
+                <ul class="seq-canvas">
+
+                    <!-- single slide item -->
+                    @foreach (var item in @ViewBag.Slider)
+                    {
+        <li>
+            <div class="seq-model">
+                <img data-seq src="@item.ImageURL" alt="@item.AltText" />
+            </div>
+            <div class="seq-title">
+                @*<span data-seq>@item.OfferTag</span>*@
+                @*<h2 data-seq>@item.Title</h2>*@
+                @*<p data-seq>@item.Description</p>*@
+                @*<a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">@item.BtnText</a>*@
+            </div>
+        </li>}
+                    <!-- end single slide item -->
+
+                </ul>
+            </div>
+            <!-- slider navigation btn -->
+            <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+                <a type="button" href="" class="seq-prev" aria-label="Previous"><span class="fa fa-angle-left"></span></a>
+                <a type="button" href="" class="seq-next" aria-label="Next"><span class="fa fa-angle-right"></span></a>
+            </fieldset>
+        </div>
+    </div>
+</section>
+<!-- / slider -->
+<!-- Start Promo section -->
+<section id="aa-promo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-promo-area">
+                    <div class="row">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Promo section -->
+<!-- Products section -->
+<section id="aa-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="aa-product-area">
+                        <div class="aa-product-inner">
+                            <!-- start prduct navigation -->
+                            <ul class="nav nav-tabs aa-products-tab">
+                                <li class="active"><a href="#men" data-toggle="tab">Men</a></li>
+                                <li><a href="#women" data-toggle="tab">Women</a></li>
+                                <li><a href="#accessories" data-toggle="tab">Accessories</a></li>
+                                <li><a href="#electronics" data-toggle="tab">Electronic</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- Start men product category -->
+                                <div class="tab-pane fade in active" id="men">
+                                    <ul class="aa-product-catg">
+                                        <!-- start single product item -->
+                                        @foreach (var item in (List<MyEcommerceAdmin.Models.Product>)@ViewBag.MenProduct)
+                                        {
+                                            { Html.RenderPartial("_Product", item); }
+                                        }
+                                        <!-- end start single product item -->
+
+                                    </ul>
+                                    <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                                </div>
+
+                                <!-- start women product category -->
+                                <div class="tab-pane fade" id="women">
+                                    <ul class="aa-product-catg">
+                                        <!-- start single product item -->
+                                        @foreach (var item in (List<MyEcommerceAdmin.Models.Product>)@ViewBag.WomenProduct)
+                                        {
+                                            { Html.RenderPartial("_Product", item); }
+                                        }
+                                        <!-- end start single product item -->
+
+                                    </ul>
+                                    <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                                </div>
+
+                                <!-- start Accessories product category -->
+                                <div class="tab-pane fade" id="accessories">
+                                    <ul class="aa-product-catg">
+                                        <!-- start single product item -->
+                                        @foreach (var item in (List<MyEcommerceAdmin.Models.Product>)@ViewBag.AccessoriesProduct)
+                                        {
+                                            { Html.RenderPartial("_Product", item); }
+                                        }
+                                        <!-- end start single product item -->
+
+                                    </ul>
+                                    <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+
+                                </div>
+
+                                <!-- start electronic product category -->
+                                <div class="tab-pane fade" id="electronics">
+                                    <ul class="aa-product-catg">
+                                        <!-- start single product item -->
+                                        @foreach (var item in (List<MyEcommerceAdmin.Models.Product>)@ViewBag.ElectronicsProduct)
+                                        {
+                                            { Html.RenderPartial("_Product", item); }
+                                        }
+                                        <!-- end start single product item -->
+
+                                    </ul>
+                                    <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+
+                                </div>
+                                <!-- / electronic product category -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Products section -->
+<!-- banner section -->
+<section id="aa-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="aa-banner-area">
+                        <a href="#"><img src="~/Content/img/home-banar.png" alt="fashion banner img"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- popular section -->
+<section id="aa-popular-category">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="aa-popular-category-area">
+                        <!-- start prduct navigation -->
+                        <ul class="nav nav-tabs aa-products-tab">
+                            <li class="active"><a href="#popular" data-toggle="tab">Popular</a></li>
+                            <li><a href="#featured" data-toggle="tab">Featured</a></li>
+                            <li><a href="#latest" data-toggle="tab">Latest</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!-- Start men popular category -->
+                            <div class="tab-pane fade in active" id="popular">
+                                <ul class="aa-product-catg aa-popular-slider">
+                                    <!-- start single product item -->
+                                    @foreach (var item in (List<MyEcommerceAdmin.Models.Product>)@ViewBag.MenProduct)
+                                    {
+                                        { Html.RenderPartial("_Product", item); }
+                                    }
+                                    <!-- end start single product item -->
+
+                                </ul>
+                                <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                            </div>
+                            <!-- / popular product category -->
+                            <!-- start featured product category -->
+                            <div class="tab-pane fade" id="featured">
+                                <ul class="aa-product-catg aa-featured-slider">
+                                    <!-- start single product item -->
+                                    @foreach (var item in (List<MyEcommerceAdmin.Models.Product>)@ViewBag.AccessoriesProduct)
+                                    {
+                                        { Html.RenderPartial("_Product", item); }
+                                    }
+                                    <!-- end start single product item -->
+
+                                </ul>
+                                <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                            </div>
+                            <!-- / featured product category -->
+                            <!-- start latest product category -->
+                            <div class="tab-pane fade" id="latest">
+                                <ul class="aa-product-catg aa-latest-slider">
+                                    <!-- start single product item -->
+                                    @foreach (var item in (List<MyEcommerceAdmin.Models.Product>)@ViewBag.ElectronicsProduct)
+                                    {
+                                        { Html.RenderPartial("_Product", item); }
+                                    }
+                                    <!-- end start single product item -->
+
+                                </ul>
+                                <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                            </div>
+                            <!-- / latest product category -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / popular section -->

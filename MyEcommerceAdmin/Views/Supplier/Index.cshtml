@@ -1,0 +1,48 @@
+﻿@model IEnumerable<MyEcommerceAdmin.Models.Supplier>
+@{
+    ViewBag.Title = "Supplier Information";
+}
+
+<div class="row">
+    
+    <div class="col">
+        <h2 class="text-info">Supplier List</h2>
+        <hr />
+        <div class="d-flex justify-content-end mb-2">
+            <a href="@Url.Action("Create", "Supplier")" class="btn btn btn-outline-primary"><i class="fa-regular fa-square-plus fs-1"></i></a>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-condensed table-hover table-bordered table-striped table">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(s=> s.CompanyName)</th>
+                        <th>@Html.DisplayNameFor(s => s.ContactName)</th>
+                        <th>@Html.DisplayNameFor(s => s.ContactTitle)</th>
+                        <th>@Html.DisplayNameFor(s => s.Phone)</th>
+                        <th>@Html.DisplayNameFor(s => s.Email)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var sup in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(s => sup.CompanyName)</td>
+                            <td>@Html.DisplayFor(s => sup.ContactName)</td>
+                            <td>@Html.DisplayFor(s => sup.ContactTitle)</td>
+                            <td>@Html.DisplayFor(s => sup.Phone)</td>
+                            <td>@Html.DisplayFor(s => sup.Email)</td>
+                            <td>
+                                <a href="@Url.Action("Edit", "Supplier", new {id = sup.SupplierID })" class="btn btn-outline-warning btn-sm"><i class="fa-solid fa-pen-to-square fs-4"></i></a>
+                                <a href="@Url.Action("Details", "Supplier", new {id = sup.SupplierID })" class="btn btn-outline-info btn-sm"><i class="fa-regular fa-circle-info fs-4"></i></a>
+                                <a href="@Url.Action("Delete", "Supplier", new {id = sup.SupplierID })" class="btn btn-outline-danger btn-sm"><i class="fa-regular fa-trash-arrow-up fs-4"></i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+

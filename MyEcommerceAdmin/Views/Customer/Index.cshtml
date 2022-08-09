@@ -1,0 +1,50 @@
+﻿@model IEnumerable<MyEcommerceAdmin.Models.Customer>
+@{
+    ViewBag.Title = "Customer Information";
+}
+
+<div class="row">
+    <div class="col">
+        <h2 class="text-info">Customer List</h2>
+        <hr />
+        <div class="d-flex justify-content-end mb-2">
+            <a href="@Url.Action("Create", "Customer")" class="btn btn btn-outline-primary"><i class="fa-regular fa-square-plus fs-1"></i></a>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-condensed table-hover table-bordered table-striped table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>@Html.DisplayNameFor(c => c.Gender)</th>
+                        <th>@Html.DisplayNameFor(c => c.Email)</th>
+                        <th>@Html.DisplayNameFor(c => c.Phone)</th>
+                        <th>@Html.DisplayNameFor(c => c.Country)</th>
+                        <th>@Html.DisplayNameFor(c => c.City)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var cus in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(c => cus.First_Name)&nbsp;@Html.DisplayFor(c => cus.Last_Name)</td>
+                            <td>@Html.DisplayFor(c => cus.Gender)</td>
+                            <td>@Html.DisplayFor(c => cus.Email)</td>
+                            <td>@Html.DisplayFor(c => cus.Phone)</td>
+                            <td>@Html.DisplayFor(c => cus.Country)</td>
+                            <td>@Html.DisplayFor(c => cus.City)</td>
+                            <td>
+                                <a href="@Url.Action("Edit", "Customer", new {id = cus.CustomerID })" class="btn btn-outline-warning btn-sm"><i class="fa-solid fa-pen-to-square fs-4"></i></a>
+                                <a href="@Url.Action("Details", "Customer", new {id = cus.CustomerID })" class="btn btn-outline-info btn-sm"><i class="fa-regular fa-circle-info fs-4"></i></a>
+                                <a href="@Url.Action("Delete", "Customer", new {id = cus.CustomerID })" class="btn btn-outline-danger btn-sm"><i class="fa-regular fa-trash-arrow-up fs-4"></i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+

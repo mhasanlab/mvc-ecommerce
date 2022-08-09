@@ -1,0 +1,201 @@
+﻿@using PagedList;
+@*@using PagedList.Mvc;*@
+
+@model IPagedList<MyEcommerceAdmin.Models.Product>
+@{
+    ViewBag.Title = "Products";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+ }
+
+
+<style>
+    .pagination > .active > a {
+        color: #fff;
+        background-color: #3fc35f;
+        border: 1px solid #3fc35f;
+    }
+
+    .aa-sidebar-price-range #minValue #maxValue {
+        border: 1px solid #e8e7e6;
+        display: inline-block;
+        font-size: 14px;
+        height: 30px;
+        margin-right: 10px;
+        margin-top: 20px;
+        padding: 4px 10px;
+    }
+</style>
+<!-- catg header banner section -->
+@if (!string.IsNullOrEmpty(Request.QueryString["categoryName"]))
+{
+<section id="aa-catg-head-banner">
+    <img src="~/Content/img/fashion/fashion-header-bg-8.jpg" alt="fashion img">
+    <div class="aa-catg-head-banner-area">
+        <div class="container">
+            <div class="aa-catg-head-banner-content">
+                <h2>@(Request.QueryString["categoryName"])</h2>
+                <ol class="breadcrumb">
+                    <li><a href="@Url.Action("Index","Home")">Home</a></li>
+                    <li class="active">@(Request.QueryString["categoryName"])</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>}
+<!-- / catg header banner section -->
+<!-- product category -->
+<section id="aa-product-category">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-8 col-md-push-3">
+                <div class="aa-product-catg-content">
+                    <div class="aa-product-catg-head">
+                        <div class="aa-product-catg-head-left">
+                            @using (Html.BeginForm("Products", "Product1", FormMethod.Post, new { @id = "ssForm", categoryName = Request.QueryString["categoryName"] }))
+                            {
+
+                <label for="">Sort by</label>
+                                <select name="sortBy">
+                                    <option value="Default" selected> Default</option>
+                                    <option value="Name"> Name</option>
+                                    <option value="Price">Price</option>
+                                    <option value="Date">Date</option>
+                                </select>
+
+                                                <label for="">Show</label>
+                                                                <select name="showNoProducts" onchange="">
+                                                                    <option value="6" selected>6</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="12">12</option>
+                                                                </select>}
+                        </div>
+                        <div class="aa-product-catg-head-right">
+                            <a id="grid-catg" href="#"><span class="fa fa-th"></span></a>
+                        </div>
+                    </div>
+                    <div class="aa-product-catg-body">
+                        <ul class="aa-product-catg">
+                            <!-- start single product item -->
+                            @if (Model != null || Model.Count > 0)
+                            {
+                                foreach (var item in Model)
+                                {
+                                    { Html.RenderPartial("_Product", item); }
+                                }
+                            }
+                            else
+                            {
+
+                <h3>Sorry! There is no Product available</h3>}
+                            <!-- end start single product item -->
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-md-pull-9">
+                <aside class="aa-sidebar" style="background-color: #f3f3f3;">
+
+                    <!-- single sidebar -->
+                    <div class="aa-sidebar-widget">
+                        <h3>Recently Views</h3>
+                        <div class="aa-recently-views">
+                            <ul>
+                                @foreach (MyEcommerceAdmin.Models.Product item in ViewBag.RecentViewsProducts)
+                                {
+                                    <li>
+                                        <a href="@Url.Action("ViewDetails", "Product1", new { id = item.ProductID })" class="aa-cartbox-img"><img alt="" src="@Url.Content(item.PicturePath)"></a>
+                                        <div class="aa-cartbox-info">
+                                            <h4><b><a href="@Url.Action("ViewDetails", "Product1", new { id = item.ProductID })">@item.Name</a></b></h4>
+                                            <p>TK. @item.UnitPrice</p>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- single sidebar -->
+                    <div class="aa-sidebar-widget">
+                        <h3>Shop By Price</h3>
+                        <!-- price range -->
+                        <div class="aa-sidebar-price-range">
+
+                            @using (Html.BeginForm("FilterByPrice", "Product1", FormMethod.Get))
+                            {
+
+                                <input type="range" min="0" max="100" onchange="updateMinInput(this.value);"> <br />
+                                <input type="range" min="0" max="100" onchange="updateMaxInput(this.value);">
+                                <br />
+                                <input type="number" name="minPrice" id="minValue" min="0" maxlength="6" max="999999" value="00" size="6">
+                                <input type="number" name="maxPrice" id="maxValue" min="0" maxlength="6" max="999999" value="00" size="6"> <br /><br />
+                                <button class="aa-filter-btn" type="submit" style="background-color:blue">Filter</button>}
+                        </div>
+
+                    </div>
+
+                    <!-- single sidebar -->
+                    <div class="aa-sidebar-widget">
+                        <h3>Category</h3>
+                        <ul class="aa-catg-nav">
+                            @foreach (var item in ViewBag.SubCategories)
+                            {
+                                <li><a href="@Url.Action("GetProductsByCategory", new { categoryName = item })">@item</a></li>
+
+                            }
+                        </ul>
+                    </div>
+                    <!-- single sidebar -->
+                    @*<div class="aa-sidebar-widget">
+            <h3>Tags</h3>
+            <div class="tag-cloud">
+                <a href="#">Fashion</a>
+                <a href="#">Ecommerce</a>
+                <a href="#">Shop</a>
+                <a href="#">Hand Bag</a>
+                <a href="#">Laptop</a>
+                <a href="#">Head Phone</a>
+                <a href="#">Pen Drive</a>
+            </div>
+        </div>*@
+
+
+                    <!-- single sidebar -->
+                    @*<div class="aa-sidebar-widget">
+            <h3>Top Sold Products</h3>
+            <div class="aa-recently-views">
+                <ul>
+                    @foreach (MyEcommerceAdmin.Models.TopSoldProduct item in ViewBag.TopRatedProducts)
+                    {
+
+        <li>
+            <a href="@Url.Action("ViewDetails", "Product1", new { id = item.product.ProductID })" class="aa-cartbox-img"><img alt="" src="@Url.Content(item.product.PicturePath)"></a>
+            <div class="aa-cartbox-info">
+                <h4> <b><a href="@Url.Action("ViewDetails", "Product", new { id = item.product.ProductID })">@item.product.Name</a></b></h4>
+                <p>Sold: @item.CountSold</p>
+            </div>
+        </li>}
+                </ul>
+            </div>
+        </div>*@
+
+
+                </aside>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- / product category -->
+
+<script type="text/javascript">function updateMinInput(val) {
+        document.getElementById('minValue').value = 00;
+        document.getElementById('minValue').value = val * 10;
+    }
+    function updateMaxInput(val) {
+        document.getElementById('maxValue').value = 00;
+        document.getElementById('maxValue').value = val * 100;
+    }</script>
+
+

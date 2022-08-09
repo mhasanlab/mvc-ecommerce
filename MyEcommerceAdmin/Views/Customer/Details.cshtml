@@ -1,0 +1,73 @@
+﻿@model MyEcommerceAdmin.Models.CustomerVM
+@{
+    ViewBag.Title = "Product Details";
+}
+
+<section class="section about-section gray-bg" id="about">
+    <div class="container">
+        <div class="row align-items-center flex-row-reverse">
+            <div class="col-lg-8">
+                <div class="about-text go-to">
+                    <h2 class="dark-color">Individual Customer Details</h2>
+                    <hr />
+                    <h3 class="theme-color lead fs-2">@Model.First_Name&nbsp;@Model.Last_Name</h3>
+                    <div class="row about-list">
+                        <div class="col-md-6">
+                            <div class="media">
+                                <label class="fs-4">Date of Birth</label>
+                                <p>@Html.DisplayFor(x => x.DateofBirth)</p>
+                            </div>
+                            <div class="media">
+                                <label class="fs-4">Gender</label>
+                                <p>@Model.Gender</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media">
+                                <label class="fs-4">Country</label>
+                                <p>@Model.Country</p>
+                            </div>
+                            <div class="media">
+                                <label class="fs-4">City</label>
+                                <p>@Model.City</p>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media">
+                                <label class="fs-4">Email</label>
+                                <p>@Model.Email</p>
+                            </div>
+                            <div class="media">
+                                <label class="fs-4">Phone</label>
+                                <p>@Model.Phone</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media">
+                                <label class="fs-4">Postal Code</label>
+                                <p>@Model.PostalCode</p>
+                            </div>
+                            <div class="media">
+                                <label class="fs-4">Address</label>
+                                <p>@Model.Address</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 @*d-flex justify-content-end*@">
+                <div class="about-avatar">
+                    <img src="@Url.Content(Model.PicturePath)" title="No Image" alt="" width="250" height="250">
+                </div>
+            </div>
+        </div>
+        <div class="counter mt-4">
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <a href="@Url.Action("Index", "Customer")" class="btn btn-danger btn-sm fs-4"><i class="fa-regular fa-hand-back-point-left"></i> Back to the list</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

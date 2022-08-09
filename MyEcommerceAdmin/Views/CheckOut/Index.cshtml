@@ -1,0 +1,174 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h2>Index</h2>
+
+@model IEnumerable<MyEcommerceAdmin.Models.OrderDetail>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<!-- catg header banner section -->
+<section id="aa-catg-head-banner">
+    <img src="~/Content/img/fashion/fashion-header-bg-8.jpg" alt="fashion img">
+    <div class="aa-catg-head-banner-area">
+        <div class="container">
+            <div class="aa-catg-head-banner-content">
+                <h2>Checkout Page</h2>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Checkout</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+@using (Html.BeginForm("PlaceOrder", "CheckOut", FormMethod.Post))
+{<!-- / catg header banner section --> <!-- Cart view section -->
+    <section id="checkout">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="checkout-area">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="checkout-left">
+                                        <div class="panel-group" id="accordion">
+                                            <!-- Billing Details -->
+                                            <div class="panel panel-default aa-checkout-billaddress">
+                                                <div class="panel">
+                                                    <h3 class="panel-title btn btn-info">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                                            Billing Details / Shippping Address
+                                                        </a>
+                                                    </h3>
+                                                </div>
+                                                <div id="collapseThree" class="panel-collapse">
+                                                    <div class="panel-body">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="aa-checkout-single-bill">
+                                                                    <input name="FirstName" type="text" required placeholder="First Name*">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="aa-checkout-single-bill">
+                                                                    <input name="LastName" type="text" required placeholder="Last Name*">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="aa-checkout-single-bill">
+                                                                    <input name="Email" type="email" required placeholder="Email Address*">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="aa-checkout-single-bill">
+                                                                    <input name="Mobile" type="tel" required placeholder="Mobile*">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="aa-checkout-single-bill">
+                                                                    <textarea name="Address" cols="8" required rows="3" placeholder="Address*"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="aa-checkout-single-bill">
+                                                                    <input name="City" type="text" placeholder="City / Town">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="aa-checkout-single-bill">
+                                                                    <input name="PostCode" type="text" placeholder="Postcode / ZIP">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="checkout-right">
+                                        <h4>Order Summary</h4>
+                                        <div class="aa-order-summary-area">
+                                            <table class="table table-responsive">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product</th>
+                                                        <th>Total</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @if (Session["username"] != null)
+                                                    {
+                                                        foreach (var item in Model)
+                                                        {
+
+                                                            <tr>
+                                                                <td>@item.Product.Name <strong> x  @item.Quantity</strong></td>
+                                                                <td>@item.TotalAmount</td>
+                                                            </tr>
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        <text>Please login to Checkout</text>}
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>Subtotal</th>
+                                                        <td>@ViewBag.SubTotal</td>
+                                                    </tr>
+                                                    <tr>
+                                                        @Html.Hidden("discount", null, new { @value = ViewBag.Discount })
+                                                        <th>Discount</th>
+                                                        <td>@ViewBag.Discount</td>
+                                                    </tr>
+                                                    <tr>
+                                                        @Html.Hidden("totalAmount", null, new { @value = ViewBag.TotalAmount })
+                                                        <th>Total</th>
+                                                        <td>@ViewBag.TotalAmount</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        <h4>Payment Method</h4>
+                                        <div class="aa-payment-method">
+
+                                            <div class="aa-checkout-single-bill aa-checkout-billaddress">
+                                                <div class="form-group">
+
+                                                    <div class="col-md-10">
+                                                        @Html.DropDownList("PayMethod", null, htmlAttributes: new { @class = "form-control", @name = "PaymentMethod" })
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br /><br />
+
+                                            <input type="submit" value="Place Order" class="btn btn-success fs-2">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- / Cart view section -->}

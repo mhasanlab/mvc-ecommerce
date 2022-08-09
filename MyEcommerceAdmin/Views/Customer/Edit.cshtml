@@ -1,0 +1,115 @@
+﻿
+@model MyEcommerceAdmin.Models.CustomerVM
+@{
+    ViewBag.Title = "Edit Customer Profile";
+}
+
+<div class="row">
+    <div class="col">
+        <div class="row g-3">
+            <div class="col-md-4">
+                <h2 class="text-info">@Model.First_Name&nbsp;@Model.Last_Name</h2>
+            </div>
+            <div class="col-md-8">
+                <div class="d-flex justify-content-end">
+                    <img src="@Url.Content(Model.PicturePath)" alt="@Model.First_Name" width="80" height="80" />
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="col-md-12">
+            @using (Html.BeginForm("Edit", "Customer", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                @Html.HiddenFor(x => x.CustomerID)
+                @Html.HiddenFor(x => x.PicturePath)
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.First_Name, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.First_Name, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.First_Name, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.Last_Name, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.Last_Name, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.Last_Name, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.UserName, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.UserName, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.UserName, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @*<label class="form-label fs-4">Set New Password</label>*@
+                        @Html.LabelFor(x => x.Password, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.Password, new { @class = "form-control fs-4", Type = "password" })
+                        @Html.ValidationMessageFor(x => x.Password, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.DateofBirth, new { @class = "form-label fs-4" })
+                        @Html.EditorFor(x => x.DateofBirth, new { htmlAttributes = new { @class = "form-control fs-4" }, Type = "date" })
+                        @Html.ValidationMessageFor(x => x.DateofBirth, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.Gender, new { @class = "form-label fs-4" })
+                        @Html.DropDownList("Gender", new List<SelectListItem>() {
+                                            new SelectListItem(){Text="Male",Value="Male"},
+                                            new SelectListItem(){Text="Female",Value="Female"},
+                                            new SelectListItem(){Text="Other",Value="Other"}
+                            }, "--Select Gender--", new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.Gender, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.Country, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.Country, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.Country, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.City, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.City, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.City, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.PostalCode, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.PostalCode, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.PostalCode, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.Email, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.Email, new { @class = "form-control fs-4", Type = "email" })
+                        @Html.ValidationMessageFor(x => x.Email, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.Phone, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.Phone, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.Phone, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.Address, new { @class = "form-label fs-4" })
+                        @Html.TextAreaFor(x => x.Address, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.Address, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.Picture, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.Picture, new { @class = "form-control fs-4", Type = "file" })
+                        @Html.ValidationMessageFor(x => x.Picture, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6" style="padding-top:36px;">
+                        <button type="submit" class="btn btn-success btn-lg col-12"><i class="fa-solid fa-up fs-4"></i> Update</button>
+                    </div>
+                </div>
+            }
+
+            <div class="col-md-12 d-flex justify-content-lg-start mt-2">
+                <a href="@Url.Action("Index", "Customer")" class="btn btn-danger btn-sm fs-4"><i class="fa-regular fa-hand-back-point-left"></i> Back to the list</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,159 @@
+﻿@model IEnumerable<MyEcommerceAdmin.Models.OrderDetail>
+@{ 
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+
+  }
+
+<!-- catg header banner section -->
+<section id="aa-catg-head-banner">
+    <img src="~/Content/img/fashion/fashion-header-bg-8.jpg" alt="fashion img">
+    <div class="aa-catg-head-banner-area">
+        <div class="container">
+            <div class="aa-catg-head-banner-content">
+                <h2>Cart Page</h2>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Cart</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / catg header banner section -->
+<!-- Cart view section -->
+<section id="cart-view">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="cart-view-area">
+                    @using (Html.BeginForm("ProcedToCheckout", "MyCart", FormMethod.Post))
+                    {
+        <div class="cart-view-table">
+            <form action="">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Remove</th>
+                                <th>Picture</th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Session["username"] != null)
+                            {
+                                int i = 0;
+                                foreach (var item in Model)
+                                {
+            <tr>
+                @Html.Hidden("shcartID-" + i + "", item.ProductID)
+
+                <td><a class="remove" href="@Url.Action("Remove", "MyCart", new { id = item.ProductID })"><fa class="fa fa-close"></fa></a></td>
+                <td><a href="#"><img src="@Url.Content(item.Product.PicturePath)" alt=""></a></td>
+                <td><a class="aa-cart-title" href="#">@item.Product.Name</a></td>
+                <td id="itemPrice-@(i)">@item.UnitPrice</td>
+                <td><input id="itemQty-@(i)" name="Qty-@(i)" class="aa-cart-quantity" type="number" maxlength="2" min="1" max="99" value="@(item.Quantity==null ? "1": item.Quantity.ToString())" /></td>
+                <td><strong id="itemAmount-@(i)">@item.TotalAmount</strong></td>
+
+
+            </tr> i++;
+                                }
+                            }
+                            else
+                            {
+            <text>Please login to view your cart</text>}
+
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+            <!-- Cart Total view -->
+            <div class="cart-view-total">
+                <h4>Cart Totals</h4>
+                <table class="aa-totals-table">
+                    <tbody>
+                        <tr>
+                            <th>Subtotal</th>
+                            <td id="subTotal">00</td>
+                        </tr>
+                        <tr>
+                            <th>Discount</th>
+                            <td id="discount">0</td>
+                        </tr>
+                        <tr>
+                            <th>Total Amount</th>
+                            <td id="totalAmount">00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+
+                        <tr>
+                            <td colspan="3"><button type="submit" class="aa-cart-view-btn" style="background-color:black">Proced to Checkout</button></td>
+                        </tr>
+
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Cart view section -->
+<script type="text/javascript">$(function () {
+        $(':input[type="number"]').change(function () {
+
+            var index = $(this).attr('id').split("-")[1];
+
+            var itemPriceEle = document.getElementById('itemPrice-' + index + '');
+            var itemQty = $('#itemQty-' + index + '').val();
+            var amountEle = document.getElementById('itemAmount-' + index + '');
+
+            var amount = itemQty * parseInt(itemPriceEle.innerText);
+
+            amountEle.innerText = amount;
+
+            CartsTotal();
+
+
+
+        });
+        CartsTotal();
+    });
+    function CartsTotal()
+    {
+        var subAmount = 0;
+        var i = 0;
+        for (var i = 0; i < 5;) {
+            if (parseInt($('#itemAmount-' + i + '').text()) > 0) {
+                subAmount = subAmount + parseInt($('#itemAmount-' + i + '').text());
+                i++;
+            }
+            else {
+                break;
+            }
+        }
+        var subTotalEle = document.getElementById('subTotal');
+        subTotalEle.innerText = subAmount;
+
+        var TotalAmountEle = document.getElementById('totalAmount');
+        TotalAmountEle.innerText = subAmount;
+    }
+    function TotalAmount()
+    {
+        for (var i = 0; i < 5; i++) {
+            var itemPriceEle = document.getElementById('itemPrice-' + i + '');
+            var itemQty = $('#itemQty-' + i + '').val();
+            var amountEle = document.getElementById('itemAmount-' + i + '');
+
+            var amount = itemQty * parseInt(itemPriceEle.innerText);
+
+            amountEle.innerText = amount;
+        }
+    }</script>

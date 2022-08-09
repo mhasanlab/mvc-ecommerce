@@ -1,0 +1,76 @@
+﻿@model IEnumerable<MyEcommerceAdmin.Models.Wishlist>
+@{
+    ViewBag.Title = "Wishlist";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<section id="aa-catg-head-banner">
+    <img src="~/Content/img/fashion/fashion-header-bg-8.jpg" alt="fashion img">
+    <div class="aa-catg-head-banner-area">
+        <div class="container">
+            <div class="aa-catg-head-banner-content">
+                <h2>Wishlist Page</h2>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Wishlist</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Cart view section -->
+<section id="cart-view">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="cart-view-area">
+                    <div class="cart-view-table aa-wishlist-table">
+                        <form action="">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th>Product</th>
+                                            <th>Price</th>
+                                            <th>Stock Status</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @if (Session["username"] != null)
+                                        {
+                                            foreach (var item in Model)
+                                            {
+
+                                                <tr>
+                                                    <td><a class="remove" href="@Url.Action("Remove", "WishList", new { id=item.WishlistID})"><fa class="fa fa-close"></fa></a></td>
+                                                    <td><a href="#"><img src="@Url.Content(item.Product.PicturePath)" alt=""></a></td>
+                                                    <td><a class="aa-cart-title" href="#">@item.Product.Name</a></td>
+                                                    <td>@item.Product.UnitPrice</td>
+                                                    <td>
+                                                        @if (item.Product.UnitInStock > 0)
+                                                        {
+                                                            <text>In Stock (@item.Product.UnitInStock)</text> }
+                                                        else
+                                                        { <text>Out of Stock (@item.Product.UnitInStock)</text>}
+                                                    </td>
+                                                    <td><a href="@Url.Action("AddToCart", "WishList", new { id=item.WishlistID})" class="aa-add-to-cart-btn">Add To Cart</a></td>
+                                                </tr>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <text>Please login to view wishlist</text>}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Cart view section -->

@@ -1,0 +1,79 @@
+﻿@model IEnumerable<MyEcommerceAdmin.Models.Order>
+
+@{
+    ViewBag.Title = "Order";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-md-12">
+
+        <table class="table table-bordered table-hover table-striped">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.OrderID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Customer.CustomerID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Payment.PaymentID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ShippingDetail.ShippingID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Discount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Taxes)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TotalAmount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.OrderDate)
+                </th>
+
+                <th>Action</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OrderID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Customer.CustomerID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Payment.PaymentID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ShippingDetail.ShippingID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Discount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Taxes)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalAmount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OrderDate)
+                    </td>
+
+                    <td>
+                        @Html.ActionLink("View Details", "Details", new { id = item.OrderID }, new{@class="btn btn-info"})
+                        
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+
+</div>
+

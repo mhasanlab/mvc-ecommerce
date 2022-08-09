@@ -1,0 +1,179 @@
+﻿@model MyEcommerceAdmin.Models.Product
+
+@{
+    ViewBag.Title = "View Details";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+ }
+<link href="~/Content/MyContent/css/style.css" rel="stylesheet" />
+<!-- product category -->
+<section id="aa-product-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-product-details-area">
+                    <div class="aa-product-details-content">
+                        <div class="row">
+                            <!-- Modal view slider -->
+                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                <div class="aa-product-view-slider">
+                                    <div id="demo-1" class="simpleLens-gallery-container">
+                                        <div class="simpleLens-container">
+                                            <div class="simpleLens-big-image-container"><a data-lens-image="@Url.Content(Model.PicturePath)" class="simpleLens-lens-image"><img src="@Url.Content(Model.PicturePath)" class="simpleLens-big-image"></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal view content -->
+                            <div class="col-md-7 col-sm-7 col-xs-12">
+                                <div class="aa-product-view-content">
+                                    <h3><strong> @Model.Name</strong></h3>
+                                    <div class="aa-product-rating">
+                                        @for (int i = 1; i <= 5; i++)
+                                        {
+                                            if (ViewBag.AvgRate >= i)
+                                            {
+                                                <span class="fa fa-star" style="color: #ff6600"></span> }
+                                            else
+                                            {
+                                                <span class="fa fa-star-o" style="color: #ff6600"></span>}
+                                        }
+
+                                    </div>
+
+                                    <div class="aa-price-block">
+                                        <span class="aa-product-view-price">TK. <b> @Model.UnitPrice</b></span>
+                                        @if (Model.UnitInStock > 0)
+                                        {
+                                            <p class="aa-product-avilability"><span style="color:white ;background-color:green">In Stock (@Model.UnitInStock)</span></p> }
+                                        else
+                                        {
+                                            <p class="aa-product-avilability"><span style="color:white;background-color:red">Out of Stock</span></p>}
+                                        @{ TempData["returnURL"] = Request.RawUrl; }
+
+
+                                    </div>
+                                    <p>@Model.ShortDescription</p>
+                                    <div class="aa-prod-quantity">
+                                        <h4>Quantity:</h4>
+                                        <form action="">
+                                            <input type="number" name="quantity" min="1" max="99" maxlength="2" value="1" />
+                                        </form>
+                                    </div>
+                                    <div class="aa-prod-view-bottom">
+                                        @if (Model.UnitInStock > 0)
+                                        {
+                                            <a class="aa-add-to-cart-btn" href="@(Session["username"] != null ? Url.Action("AddToCart", "Product1", new { id=Model.ProductID}) : Url.Action("Login", "Account"))">Add To Cart</a> }
+                                        else
+                                        {
+                                            <a class="aa-add-to-cart-btn" ))">Add To Cart</a>}
+                                        <a class="aa-add-to-cart-btn" href="@(Session["username"] != null ? Url.Action("WishList", "Product1", new { id = Model.ProductID }) : Url.Action("Login", "Account"))">Wishlist</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aa-product-details-bottom">
+                        <ul class="nav nav-tabs" id="myTab2">
+                            <li><a href="#description" data-toggle="tab">Description</a></li>
+                            <li><a href="#review" data-toggle="tab">Reviews</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="description">
+                                <p>@Model.ShortDescription</p>
+                               
+                            </div>
+                            <div class="tab-pane fade " id="review">
+                                <div class="aa-product-review-area">
+                                    <h4><b>@ViewBag.TotalReviews</b> Reviews for @Model.Name</h4>
+                                    <ul class="aa-review-nav">
+                                        @if (ViewBag.Reviews != null)
+                                        {
+                                            foreach (var item in ViewBag.Reviews)
+                                            {
+                                                <li>
+                                                    <div class="media">
+                                                        <div class="media-left">
+                                                            <a href="#">
+                                                                <img class="media-object" src="/Content/img/testimonial-img-3.jpg" alt="girl image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h4 class="media-heading"><strong>@item.Name</strong> - <span>@item.DateTime</span></h4>
+                                                            <div class="aa-product-rating">
+                                                                @for (int i = 1; i <= 5; i++)
+                                                                {
+                                                                    if (@item.Rate >= i)
+                                                                    {
+                                                                        <span class="fa fa-star"></span> }
+                                                                    else
+                                                                    {
+                                                                        <span class="fa fa-star-o"></span>}
+                                                                }
+
+                                                            </div>
+                                                            <p>@item.Review1</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            }
+                                        }
+
+                                    </ul>
+                                    <h4>Add a review</h4>
+                                    @if (Session["username"] != null)
+                                    {
+                                        using (Html.BeginForm("AddReview", "Product1", new { productID = @Model.ProductID }, FormMethod.Post, new { @class = "aa-review-form" }))
+                                        {
+                                            <div class="aa-your-rating">
+                                                <p>Your Rating</p>
+                                                <input type="number" name="rate" min="1" max="5" maxlength="1" value="1" />
+
+                                            </div> <!-- review form -->
+
+                                            <div class="form-group">
+                                                <label for="message">Your Review</label>
+                                                <textarea class="form-control" rows="3" name="message"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="name">Name</label>
+                                                <input type="text" class="form-control" name="name" placeholder="Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control" name="email" placeholder="example@gmail.com">
+                                            </div>
+
+                                            <button type="submit" class="btn btn-default aa-review-submit">Submit</button> }
+                                    }
+                                    else
+                                    {
+                                        <label>Please login to Add your important Review about product.</label>}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br /><br />
+                    <!-- Related product -->
+                    <div class="aa-product-related-item">
+                        <h3>Related Products</h3>
+                        <ul class="aa-product-catg aa-related-item-slider">
+                            <!-- start single product item -->
+                            <!-- start single product item -->
+                            @foreach (var item in (List<MyEcommerceAdmin.Models.Product>)@ViewBag.RelatedProducts)
+                            {
+                                { Html.RenderPartial("_Product", item); }
+                            }
+                            <!-- end start single product item -->
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / product category -->

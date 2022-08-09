@@ -1,0 +1,121 @@
+﻿@model MyEcommerceAdmin.Models.CustomerVM
+@{
+    ViewBag.Title = "RegisterCustomer";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="col">
+           
+           
+            <div class="col-md-12">
+                <h2 class="text-info" style="padding-top:20px;">Register Now</h2>
+                <hr />
+                @using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "msg", OnComplete = "clearAll" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="row mb-2">
+                        <div id="msg">
+
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            @Html.LabelFor(x => x.First_Name, new { @class = "form-label fs-4" })
+                            @Html.TextBoxFor(x => x.First_Name, new { @class = "form-control fs-4" })
+                            @Html.ValidationMessageFor(x => x.First_Name, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-6">
+                            @Html.LabelFor(x => x.Last_Name, new { @class = "form-label fs-4" })
+                            @Html.TextBoxFor(x => x.Last_Name, new { @class = "form-control fs-4" })
+                            @Html.ValidationMessageFor(x => x.Last_Name, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="col-md-6" style="padding-top:10px;">
+                            @Html.LabelFor(x => x.UserName, new { @class = "form-label fs-4" })
+                            @Html.TextBoxFor(x => x.UserName, new { @class = "form-control fs-4" })
+                            @Html.ValidationMessageFor(x => x.UserName, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-6" style="padding-top:10px;">
+                            @Html.LabelFor(x => x.Password, new { @class = "form-label fs-4" })
+                            @Html.TextBoxFor(x => x.Password, new { @class = "form-control fs-4", Type = "password" })
+                            @Html.ValidationMessageFor(x => x.Password, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="col-md-6" style="padding-top:10px;">
+                            @Html.LabelFor(x => x.DateofBirth, new { @class = "form-label fs-4" })
+                            @Html.EditorFor(x => x.DateofBirth, new { htmlAttributes = new { @class = "form-control fs-4" }, Type = "date" })
+                            @Html.ValidationMessageFor(x => x.DateofBirth, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-6" style="padding-top:10px;">
+                            @Html.LabelFor(x => x.Gender, new { @class = "form-label fs-4" })
+                            @Html.DropDownList("Gender", new List<SelectListItem>() {
+                                                new SelectListItem(){Text="Male",Value="Male"},
+                                                new SelectListItem(){Text="Female",Value="Female"},
+                                                new SelectListItem(){Text="Other",Value="Other"}
+                                }, "--Select Gender--", new { @class = "form-control fs-4" })
+                            @Html.ValidationMessageFor(x => x.Gender, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="col-md-6" style="padding-top:10px;">
+                            @Html.LabelFor(x => x.Country, new { @class = "form-label fs-4" })
+                            @Html.TextBoxFor(x => x.Country, new { @class = "form-control fs-4" })
+                            @Html.ValidationMessageFor(x => x.Country, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-6" style="padding-top:10px;">
+                            @Html.LabelFor(x => x.City, new { @class = "form-label fs-4" })
+                            @Html.TextBoxFor(x => x.City, new { @class = "form-control fs-4" })
+                            @Html.ValidationMessageFor(x => x.City, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="col-md-6" style="padding-top:10px;">
+                            @Html.LabelFor(x => x.PostalCode, new { @class = "form-label fs-4" })
+                            @Html.TextBoxFor(x => x.PostalCode, new { @class = "form-control fs-4" })
+                            @Html.ValidationMessageFor(x => x.PostalCode, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-6" style="padding-top:10px;">
+                            @Html.LabelFor(x => x.Email, new { @class = "form-label fs-4" })
+                            @Html.TextBoxFor(x => x.Email, new { @class = "form-control fs-4", Type = "email" })
+                            @Html.ValidationMessageFor(x => x.Email, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="col-md-6" style="padding-top:10px;">
+                            @Html.LabelFor(x => x.Phone, new { @class = "form-label fs-4" })
+                            @Html.TextBoxFor(x => x.Phone, new { @class = "form-control fs-4" })
+                            @Html.ValidationMessageFor(x => x.Phone, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-6" style="padding-top:10px;">
+                            @Html.LabelFor(x => x.Address, new { @class = "form-label fs-4" })
+                            @Html.TextAreaFor(x => x.Address, new { @class = "form-control fs-4" })
+                            @Html.ValidationMessageFor(x => x.Address, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-6">
+                            @Html.LabelFor(x => x.Picture, new { @class = "form-label fs-4" })
+                            @Html.TextBoxFor(x => x.Picture, new { @class = "form-control fs-4", Type = "file" })
+                            @Html.ValidationMessageFor(x => x.Picture, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-6" style="padding-top:20px; padding-bottom:10px;">
+                            <button type="submit" class="btn btn-success btn-lg col-12"><i class="fa-regular fa-floppy-disk fs-4"></i>Register</button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script src="~/Content/JS/jquery-3.6.0.js"></script>
+    <script src="~/Content/JS/jquery.validate.js"></script>
+    <script src="~/Content/JS/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Content/JS/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        $("#form0").attr("enctype", "multipart/form-data")
+
+        function clearAll() {
+            $("#form0").trigger("reset");
+        }
+    </script>
+
+}
+
+

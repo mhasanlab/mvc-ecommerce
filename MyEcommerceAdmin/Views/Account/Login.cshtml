@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<!-- Cart view section -->
+<section id="aa-myaccount">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-myaccount-area">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="aa-myaccount-login">
+                                <h4>Login</h4>
+
+                                @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "aa-login-form" }))
+                                {
+                                    <label for="">Username or Email address<span>*</span></label>
+                                    <input name="UserName" type="text" required placeholder="Username">
+                                    <label for="">Password<span>*</span></label>
+                                    <input name="Password" type="password" required placeholder="Password">
+                                    <button type="submit" class="btn btn-success">Login</button>
+                                    <label class="rememberme" for="rememberme"><input type="checkbox" id="rememberme"> Remember me </label>
+                                    <p class="aa-lost-password"><a href="#">Lost your password?</a></p>}
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="aa-myaccount-register">
+                                <h4>don't have any account?</h4>
+                                @*
+                                    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "aa-login-form" }))
+                                    {
+                                        <label for="">First Name<span>*</span></label>
+                                        <input name="First_Name" type="text" placeholder="Enter first name">
+
+                                        <label for="">Last Name<span>*</span></label>
+                                        <input name="Last_Name" type="text" placeholder="Enter last name">
+
+                                        <label for="">Username<span>*</span></label>
+                                        <input name="UserName" type="text" placeholder="Username">
+
+                                        <label for="">Password<span>*</span></label>
+                                        <input name="Password" type="password" placeholder="Password">
+
+                                        <label for="">Email<span>*</span></label>
+                                        <input name="Email" type="text" placeholder="Enter your email">
+
+                                        <label for="">Mobile<span>*</span></label>
+                                        <input name="Phone" type="text" placeholder="Mobile">
+
+                                        <label for="">Address<span></span></label>
+                                        <input name="Address" type="text" placeholder="Address">
+
+                                        <button type="submit" class="btn btn-primary">Register</button>
+                                      }*@
+
+                                <h3 class="text-info">Click the button below to create a new account</h3>
+
+                                <a href="@Url.Action("RegisterCustomer", "Account")" class="btn btn-primary btn-block fs-2">Register Now</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Cart view section -->

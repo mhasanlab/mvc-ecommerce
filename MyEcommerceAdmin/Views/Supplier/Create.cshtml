@@ -1,0 +1,85 @@
+﻿@model MyEcommerceAdmin.Models.Supplier
+@{
+    ViewBag.Title = "Add New Supplier";
+}
+
+<div class="row">
+    <div class="col">
+        <h2 class="text-info">Add New Supplier</h2>
+        <hr />
+        <div class="col-md-12">
+            @using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "msg", OnComplete = "clearAll" }))
+            {
+                @Html.AntiForgeryToken()
+                <div class="row mb-2">
+                    <div id="msg">
+
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-12">
+                        @Html.LabelFor(x => x.CompanyName, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.CompanyName, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.CompanyName, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.ContactName, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.ContactName, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.ContactName, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.ContactTitle, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.ContactTitle, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.ContactTitle, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.Email, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.Email, new { @class = "form-control fs-4", Type = "email" })
+                        @Html.ValidationMessageFor(x => x.Email, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.Phone, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.Phone, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.Phone, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.Country, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.Country, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.Country, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.City, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.City, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.City, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.Address, new { @class = "form-label fs-4" })
+                        @Html.TextAreaFor(x => x.Address, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.Address, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6" style="padding-top:50px;">
+                        <button type="submit" class="btn btn-success btn-lg col-12"><i class="fa-regular fa-floppy-disk fs-4"></i> Save</button>
+                    </div>
+                </div>
+            }
+
+            <div class="col-md-12 d-flex justify-content-lg-start mt-3">
+                <a href="@Url.Action("Index", "Supplier")" class="btn btn-danger btn-sm fs-4"><i class="fa-regular fa-hand-back-point-left"></i> Back to the list</a>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script src="~/Content/JS/jquery-3.6.0.js"></script>
+    <script src="~/Content/JS/jquery.validate.js"></script>
+    <script src="~/Content/JS/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Content/JS/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        function clearAll() {
+            $("#form0").trigger("reset");
+        }
+    </script>
+
+}

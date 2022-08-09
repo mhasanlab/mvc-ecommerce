@@ -1,0 +1,47 @@
+﻿@{ ViewBag.Title = "Dashboard";
+    ViewBag.SubTitle = "Statistics Overview"; }
+@section scripts{
+    <!-- Morris Charts JavaScript -->
+    <script src="~/Content/js/jquery.js"></script>
+    <script src="~/Content/js/plugins/morris/raphael.min.js"></script>
+    <script src="~/Content/js/plugins/morris/morris.min.js"></script>
+    <script src="~/Content/js/plugins/morris/morris-data.js"></script>
+}
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Transactions Panel</h3>
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Order Date</th>
+                                <th>Order Amount(BDT)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in @ViewBag.latestOrders)
+                            {
+
+                <tr>
+                    <td>@item.OrderID</td>
+                    <td>@item.OrderDate</td>
+                    <td>@item.TotalAmount</td>
+                </tr>
+
+                }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-right">
+                    <a href="@Url.Action("Index", "Order")">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

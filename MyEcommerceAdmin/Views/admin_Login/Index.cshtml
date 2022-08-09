@@ -1,0 +1,85 @@
+﻿
+@model MyEcommerceAdmin.Models.admin_Login
+
+@{ Layout = null; }
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Admin-Login</title>
+    <link href="~/Content/CSS/bootstrap.css" rel="stylesheet" />
+    <link href="~/Fontawesome/css/all.css" rel="stylesheet" />
+    <link href="~/Content/CSS/form.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        @using (Html.BeginForm("Login", "admin_Login", FormMethod.Post, new { @id = "loginForm" }))
+        {
+            @Html.ValidationSummary(true)
+            @Html.AntiForgeryToken()
+
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="~/Content/img/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+                </div>
+                <div class="col-md-6 contents" style="padding-top:120px;">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="mb-4">
+                                <h3>Admin Panel</h3>
+                                <p class="mb-4">Login To Your Account</p>
+                            </div>
+                            <form>
+                                <div class="form-group first">
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    <div class="input-group">
+                                        <label for="username" class="col-form-label"><i class="fa-duotone fa-user-vneck-hair fs-2"></i></label>&nbsp;&nbsp;
+                                        @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control", @name = "username", @placeholder = "Username" } })
+                                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger " })
+                                    </div>
+                                </div><br />
+                                <div class="form-group last mb-4">
+                                    <div class="input-group">
+                                        <label for="username" class="col-form-label"><i class="fa-duotone fa-lock-keyhole fs-2"></i></label>&nbsp;&nbsp;
+                                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @name = "password", @type = "password", @placeholder = "Password" } })
+                                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+
+                                    </div>
+                                </div>
+
+                                <div class="checkbox mt-3 text-center">
+                                    <label class="">
+                                        <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                    </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="ml-5 justify-content-end">
+                                        <a href="#" class="forgot-pass">Forgot Password</a>
+                                    </span>
+                                </div>
+                                <div class="col-md-12 mt-3">
+                                    <button type="submit" id="btn-login" class="btn btn-success col-12">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <footer class="footer fixed-bottom">
+        <div class="container-fluid">
+            <div class="row text-muted">
+                <div class="col-6 text-start">
+                    <p class="mb-0">
+                        <a class="text-muted nav-link" href="@Url.Action("Index", "admin_Login")">&copy; @DateTime.Now.Year<strong>&nbsp;IsDB-BISEW</strong></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    @*<script src="~/Scripts/bootstrap.bundle.js"></script>*@
+    <script src="~/Content/JS/bootstrap.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title - MVC E-commerce Project</title>
+    <link href="~/Content/MyContent/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/MyContent/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/MyContent/css/jquery.simpleLens.css" rel="stylesheet" />
+    <link href="~/Content/MyContent/css/jquery.smartmenus.bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/MyContent/css/nouislider.css" rel="stylesheet" />
+    <link href="~/Content/MyContent/css/sequence-theme.modern-slide-in.css" rel="stylesheet" />
+    <link href="~/Content/MyContent/css/slick.css" rel="stylesheet" />
+    <link href="~/Content/MyContent/css/style.css" rel="stylesheet" />
+    <style>
+        #menu .menu-area .navbar-default .navbar-nav .open a {
+            background-color: #d31e1e;
+        }
+
+        #aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget .aa-footer-nav li a {
+            color: #f8f8f8;
+            font-size: 20px;
+        }
+    </style>
+
+    @*JS Link*@
+
+    <script src="~/Content/MyContent/js/jquery.min.js"></script>
+
+    @*searching products*@
+
+    <link href="~/Content/MyContent/Intellisence/css/jquery-ui.min.css" rel="stylesheet" />
+    <script src="~/Content/MyContent/Intellisence/js/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/MyContent/Intellisence/js/jquery-ui.min.js"></script>
+
+    @*Custom JQuery Code For Seraching Product*@
+
+    <script type="text/javascript">
+        $(function () {
+            $("#searchTxtBox").autocomplete({
+                source: '@Url.Action("GetProducts","Product1")'
+            });
+        });
+    </script>
+
+</head>
+<body>
+    @*>>Webpage loader>>*@
+
+    @*<div id="wpf-loader-two">
+            <div class="wpf-loader-two-inner">
+                <span>Loading</span>
+            </div>
+        </div>*@
+    <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Start header section -->
+    <header id="aa-header">
+        <!-- start header top  -->
+        <div class="aa-header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="aa-header-top-area">
+                            <!-- start header top left -->
+                            <div class="aa-header-top-left">
+
+                                <!-- start currency -->
+                                <div class="aa-currency">
+                                    <div class="dropdown">
+                                        <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            <i class="fa fa-money"></i>BDT
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- start cellphone -->
+                                <div class="cellphone hidden-xs">
+                                    <p><span class="fa fa-phone"></span>017-6558-6588</p>
+                                </div>
+                            </div>
+                            <!-- header top Right -->
+                            <div class="aa-header-top-right">
+                                <ul class="aa-head-top-nav-right">
+
+                                    <li><a href="@(Session["username"] != null ? Url.Action("Index", "Account") : Url.Action("Login", "Account"))">My Account</a></li>
+
+                                    <li class="hidden-xs">
+                                        <a href="@(Session["username"] != null ? Url.Action("Index", "WishList") : Url.Action("Login", "Account"))">
+                                            Wishlist @if (@ViewBag.WlItemsNo > 0)
+                                            {<text>(@ViewBag.WlItemsNo)</text>}
+                                        </a>
+                                    </li>
+
+                                    <li class="hidden-xs">
+                                        <a href="@(Session["username"] != null ? Url.Action("Index", "MyCart") : Url.Action("Login", "Account"))">
+                                            My Cart @if (@ViewBag.NoOfItem > 0)
+                                            {<text>(@ViewBag.NoOfItem)</text>}
+                                        </a>
+                                    </li>
+
+                                    <li class="hidden-xs"><a href="@(Session["username"] != null ? Url.Action("Index", "CheckOut") : Url.Action("Login", "Account"))">Checkout</a></li>
+
+                                    @if (Session["username"] == null)
+                                    {
+
+                                        <li>@Html.ActionLink("Login", "Login", "Account")</li>
+                                    }
+                                    else
+                                    {
+                                        <li><a href="@Url.Action("Logout","Account")">Logout</a></li>
+                                        <li><a href="">@Session["username"]</a></li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- start header bottom  -->
+        <div class="aa-header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="aa-header-bottom-area">
+                            <!-- logo  -->
+                            <div class="aa-logo">
+                                <!-- Text based logo -->
+                                <a href="@Url.Action("Index","Home")">
+                                    <span class="fa fa-shopping-cart"></span>
+                                    <p>IsDB-BISEW<strong>.ORG</strong> <span>Trusted Online Shop</span></p>
+                                </a>
+                            </div>
+
+                            <!-- cart box -->
+                            <div class="aa-cartbox">
+                                <a class="aa-cart-link" href="#">
+                                    <span class="fa fa-shopping-basket"></span>
+                                    <span class="aa-cart-title">SHOPPING CART</span>
+                                    <span class="aa-cart-notify">@(ViewBag.NoOfItem==null ? 0 :ViewBag.NoOfItem)</span>
+                                </a>
+
+                                <div class="aa-cartbox-summary">
+                                    <ul>
+                                        @if (Session["username"] != null)
+                                        {
+                                            Html.RenderPartial("_CartBox");
+                                        }
+                                    </ul>
+
+                                    <a class="aa-cartbox-checkout aa-primary-btn" href="@Url.Action("Index","CheckOut")">Checkout</a>
+
+                                </div>
+                            </div>
+
+                            <!-- search box -->
+                            <div class="aa-search-box">
+                                <form action="@Url.Action("Search","Product1")" method="get">
+
+                                    <input type="text" name="products" id="searchTxtBox" placeholder="Search product here . . . ">
+
+                                    <button type="submit" class="bg-primary"><span class="fa fa-search"></span></button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- menu -->
+    <section id="menu">
+        <div class="container">
+            <div class="menu-area">
+                <!-- Navbar -->
+                <div class="navbar navbar-default bg-dark" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse" style="background-color:forestgreen">
+                        <!-- Left nav -->
+                        <ul class="nav navbar-nav">
+                            <li><a href="@Url.Action("Index","Home")">Home</a></li>
+
+                            @{ MyEcommerceAdmin.Models.MyEcommerceDbContext db = new MyEcommerceAdmin.Models.MyEcommerceDbContext();
+
+                                Dictionary<string, IEnumerable<string>> navbar = new Dictionary<string, IEnumerable<string>>();
+
+
+                                List<MyEcommerceAdmin.Models.Category> Categories = db.Categories.ToList();
+
+                                foreach (MyEcommerceAdmin.Models.Category cat in Categories)
+                                {
+                                    IEnumerable<string> subCat = db.SubCategories.Where(x => x.CategoryID == cat.CategoryID).Select(x => x.Name).ToList();
+                                    navbar.Add(cat.Name, subCat);
+                                }
+                                int count = 0;
+                                foreach (KeyValuePair<string, IEnumerable<string>> nav in navbar)
+                                {
+                                    if (count < 8)
+                                    {
+                                        <li>
+                                            <a href="">@nav.Key<span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+
+                                                @foreach (var subNav in nav.Value)
+                                                {
+                                                    <li class="text-primary"><a href="@Url.Action("GetProductsByCategory","Product1", new { categoryName = subNav.Trim()})">@subNav.Trim()</a></li>
+                                                }
+                                            </ul>
+                                        </li>
+                                        count++;
+                                    }
+                                } }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="aa-footer">
+        <!-- footer bottom -->
+        <div class="aa-footer-top bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="aa-footer-top-area">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="aa-footer-widget">
+                                        <h3>Important Links</h3>
+                                        <ul class="aa-footer-nav">
+                                            <li><a href="@Url.Action("Index", "admin_Login")">Admin Login</a></li>
+                                            <li><a href="#">Our Services</a></li>
+                                            <li><a href="#">Our Products</a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="aa-footer-widget">
+                                        <div class="aa-footer-widget">
+                                            <h3>Policy</h3>
+                                            <ul class="aa-footer-nav">
+                                                <li><a href="#">Delivery</a></li>
+                                                <li><a href="#">Returns</a></li>
+                                                <li><a href="#">Services</a></li>
+                                                <li><a href="#">Discount</a></li>
+                                                <li><a href="#">Special Offer</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="aa-footer-widget">
+                                        <div class="aa-footer-widget">
+                                            <h3>Useful Links</h3>
+                                            <ul class="aa-footer-nav">
+                                                <li><a href="#">Site Map</a></li>
+                                                <li><a href="#">Search</a></li>
+                                                <li><a href="#">Advanced Search</a></li>
+                                                <li><a href="#">Suppliers</a></li>
+                                                <li><a href="#">FAQ</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="aa-footer-widget">
+                                        <div class="aa-footer-widget">
+                                            <h3>Contact Information</h3>
+                                            <address>
+                                                <p>IDB-Bhabon, Dhaka Bangladesh</p>
+                                                <p><span class="fa fa-phone"></span>019-7558-7588</p>
+                                                <p><span class="fa fa-envelope"></span>help@isdb-bisew.org</p>
+                                            </address>
+                                            <div class="aa-footer-social">
+                                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                                <a href="#"><span class="fa fa-google-plus"></span></a>
+                                                <a href="#"><span class="fa fa-youtube"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom -->
+        <div class="aa-footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="aa-footer-bottom-area">
+                            <p>&copy; @DateTime.Now.Year - <a href="https://www.isdb-bisew.org">IsDB-BISEW</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/Content/MyContent/js/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Content/MyContent/js/bootstrap.js"></script>
+    <script src="~/Content/MyContent/js/jquery.smartmenus.js"></script>
+    <script src="~/Content/MyContent/js/jquery.smartmenus.bootstrap.js"></script>
+    <script src="~/Content/MyContent/js/sequence.js"></script>
+    <script src="~/Content/MyContent/js/sequence-theme.modern-slide-in.js"></script>
+    <script src="~/Content/MyContent/js/jquery.simpleGallery.js"></script>
+    <script src="~/Content/MyContent/js/jquery.simpleLens.js"></script>
+    <script src="~/Content/MyContent/js/slick.js"></script>
+    <script src="~/Content/MyContent/js/nouislider.js"></script>
+    <script src="~/Content/MyContent/js/custom.js"></script>
+    @RenderSection("scripts", false)
+
+    <script type="text/javascript">
+        $(function () {
+
+            // Initalize modal dialog
+
+            $('body').on('click', '.modal-link', function (e) {
+                e.preventDefault();
+                $(this).attr('data-target', '#login-modal');
+                $(this).attr('data-toggle', 'modal');
+            });
+
+            // Attach listener to .modal-close-btn's so that when the button is pressed the modal dialog disappears
+
+            $('body').on('click', '.modal-close-btn', function () {
+                $('#login-modal').modal('hide');
+            });
+
+            //clear modal cache, so that new content can be loaded
+            $('#login-modal').on('hidden.bs.modal', function () {
+                $(this).removeData('bs.modal');
+            });
+
+            $('#CancelModal').on('click', function () {
+                return false;
+            });
+        });
+    </script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<MyEcommerceAdmin.Models.admin_Employee>
+@{
+    ViewBag.Title = "Employee Information";
+}
+
+<div class="row">
+    <div class="col">
+        <h2 class="text-info">Employee List</h2>
+        <hr />
+        <div class="d-flex justify-content-end mb-2">
+            <a href="@Url.Action("Create", "Employee")" class="btn btn btn-outline-primary"><i class="fa-regular fa-square-plus fs-1"></i></a>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-condensed table-hover table-bordered table-striped table">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(e => e.FirstName)</th>
+                        <th>@Html.DisplayNameFor(e => e.LastName)</th>
+                        <th>@Html.DisplayNameFor(e => e.DateofBirth)</th>
+                        <th>@Html.DisplayNameFor(e => e.Gender)</th>
+                        <th>@Html.DisplayNameFor(e => e.Email)</th>
+                        <th>@Html.DisplayNameFor(e => e.Phone)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var emp in Model)
+                    {
+                    <tr>
+                        <td>@Html.DisplayFor(e => emp.FirstName)</td>
+                        <td>@Html.DisplayFor(e => emp.LastName)</td>
+                        <td>@Html.DisplayFor(e => emp.DateofBirth)</td>
+                        <td>@Html.DisplayFor(e => emp.Gender)</td>
+                        <td>@Html.DisplayFor(e => emp.Email)</td>
+                        <td>@Html.DisplayFor(e => emp.Phone)</td>
+                        <td>
+                            <a href="@Url.Action("Edit", "Employee", new {id = emp.EmpID })" class="btn btn-outline-warning btn-sm"><i class="fa-solid fa-pen-to-square fs-4"></i></a>
+                            <a href="@Url.Action("Info", "Employee", new {id = emp.EmpID })" class="btn btn-outline-info btn-sm"><i class="fa-regular fa-circle-info fs-4"></i></a>
+                            <a href="@Url.Action("Delete", "Employee", new {id = emp.EmpID })" class="btn btn-outline-danger btn-sm"><i class="fa-regular fa-trash-arrow-up fs-4"></i></a>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,97 @@
+﻿@model MyEcommerceAdmin.Models.ProductVM
+@{
+    ViewBag.Title = "Add New Product";
+}
+
+<div class="row">
+    <div class="col">
+        <h2 class="text-info">Add New Product</h2>
+        <hr />
+        <div class="col-md-12">
+            @using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "msg", OnComplete = "clearAll" }))
+            {
+                @Html.AntiForgeryToken()
+                <div class="row mb-2">
+                    <div id="msg">
+
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-12">
+                        @Html.LabelFor(x => x.Name, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.Name, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-12">
+                        @Html.LabelFor(x => x.SupplierID, new { @class = "form-label fs-4" })
+                        @Html.DropDownListFor(x => x.SupplierID, ViewBag.supplierList as SelectList, "***Select Supplier***", new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.SupplierID, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.CategoryID, new { @class = "form-label fs-4" })
+                        @Html.DropDownListFor(x => x.CategoryID, ViewBag.categoryList as SelectList, "***Select Category***", new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.CategoryID, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.SubCategoryID, new { @class = "form-label fs-4" })
+                        @Html.DropDownListFor(x => x.SubCategoryID, ViewBag.SubCategoryList as SelectList, "***Select SubCategory***", new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.SubCategoryID, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.UnitPrice, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.UnitPrice, new { @class = "form-control fs-4", Type = "money" })
+                        @Html.ValidationMessageFor(x => x.UnitPrice, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.OldPrice, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.OldPrice, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.OldPrice, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.ShortDescription, new { @class = "form-label fs-4" })
+                        @Html.TextAreaFor(x => x.ShortDescription, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.ShortDescription, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.UnitInStock, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.UnitInStock, new { @class = "form-control fs-4" })
+                        @Html.ValidationMessageFor(x => x.UnitInStock, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(x => x.Picture, new { @class = "form-label fs-4" })
+                        @Html.TextBoxFor(x => x.Picture, new { @class = "form-control fs-4", Type = "file" })
+                        @Html.ValidationMessageFor(x => x.Picture, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-md-6 mt-4">
+                        <button type="submit" class="btn btn-success btn-lg col-12 mt-4"><i class="fa-regular fa-floppy-disk fs-4"></i> Save</button>
+                    </div>
+                </div>
+
+                @*<div class="col-md-6 d-flex justify-content-lg-end mt-4">
+                    <button type="submit" class="btn btn-success btn-lg col-4"><i class="fa-regular fa-floppy-disk fs-4"></i> Save</button>
+                </div>*@
+            }
+
+            <div class="col-md-12 d-flex justify-content-lg-start mt-3">
+                <a href="@Url.Action("Index", "Product")" class="btn btn-danger btn-sm fs-4"><i class="fa-regular fa-hand-back-point-left"></i> Back to the list</a>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script src="~/Content/JS/jquery-3.6.0.js"></script>
+    <script src="~/Content/JS/jquery.validate.js"></script>
+    <script src="~/Content/JS/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Content/JS/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        $("#form0").attr("enctype", "multipart/form-data")
+
+        function clearAll() {
+            $("#form0").trigger("reset");
+        }
+    </script>
+    
+}
+
